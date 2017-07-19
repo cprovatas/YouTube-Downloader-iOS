@@ -1,0 +1,18 @@
+PODS:
+  - Alamofire (4.2.0)
+  - TFHpple (2.0.0)
+  - WKWebViewWithURLProtocol (0.1.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - TFHpple
+  - WKWebViewWithURLProtocol
+
+SPEC CHECKSUMS:
+  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  TFHpple: a916fe0799eb30aa29b2670d14d5868cdd3a5b81
+  WKWebViewWithURLProtocol: f7f2b367c40680105794a068ed2bb2cd5922c27c
+
+PODFILE CHECKSUM: 9ce454c4a23570384750f56211959378aa9a899b
+
+COCOAPODS: 1.1.1

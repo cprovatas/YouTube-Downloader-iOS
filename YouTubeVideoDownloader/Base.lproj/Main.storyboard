@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="mSM-cc-ux7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Downloads-->
+        <scene sceneID="3cA-fN-q0f">
+            <objects>
+                <viewController id="fjV-Lm-FvR" customClass="VideoList" customModule="YouTubeVideoDownloader" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yrO-Iy-Vg5"/>
+                        <viewControllerLayoutGuide type="bottom" id="5eI-3B-Zao"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qmN-45-Q6z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="exa-BS-ilN">
+                                <rect key="frame" x="-0.5" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoCell" rowHeight="75" id="I4H-Wh-p7M" customClass="VideoCell" customModule="YouTubeVideoDownloader" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="I4H-Wh-p7M" id="fiK-fH-4w5">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="U4q-uA-bOl">
+                                                    <rect key="frame" x="0.0" y="72.5" width="375" height="2"/>
+                                                    <color key="progressTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </progressView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="ap7-pG-3OY">
+                                                    <rect key="frame" x="333.5" y="25" width="37.5" height="23.5"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KVq-7c-afL">
+                                                    <rect key="frame" x="8" y="5.5" width="64" height="63.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="KVq-7c-afL" secondAttribute="height" multiplier="1:1" id="9iY-If-Jb1"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oWR-vs-iEl">
+                                                    <rect key="frame" x="80" y="6" width="225" height="63.5"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="U4q-uA-bOl" firstAttribute="centerX" secondItem="fiK-fH-4w5" secondAttribute="centerX" id="1uy-Fp-htW"/>
+                                                <constraint firstItem="KVq-7c-afL" firstAttribute="centerY" secondItem="fiK-fH-4w5" secondAttribute="centerY" id="2xD-MZ-TFs"/>
+                                                <constraint firstItem="ap7-pG-3OY" firstAttribute="width" secondItem="fiK-fH-4w5" secondAttribute="width" multiplier="0.1" id="FYF-zz-qNB"/>
+                                                <constraint firstItem="KVq-7c-afL" firstAttribute="height" secondItem="fiK-fH-4w5" secondAttribute="height" multiplier="0.85" id="IVi-8w-v0w"/>
+                                                <constraint firstItem="U4q-uA-bOl" firstAttribute="width" secondItem="fiK-fH-4w5" secondAttribute="width" id="RrZ-pz-KLB"/>
+                                                <constraint firstItem="oWR-vs-iEl" firstAttribute="height" secondItem="KVq-7c-afL" secondAttribute="height" id="UHw-55-gPY"/>
+                                                <constraint firstItem="oWR-vs-iEl" firstAttribute="width" secondItem="fiK-fH-4w5" secondAttribute="width" multiplier="0.6" id="bT5-Jp-Onk"/>
+                                                <constraint firstItem="oWR-vs-iEl" firstAttribute="leading" secondItem="KVq-7c-afL" secondAttribute="trailing" constant="8" id="gpT-Gg-kKJ"/>
+                                                <constraint firstAttribute="baseline" secondItem="U4q-uA-bOl" secondAttribute="bottom" id="huw-7T-byy"/>
+                                                <constraint firstItem="ap7-pG-3OY" firstAttribute="centerY" secondItem="fiK-fH-4w5" secondAttribute="centerY" id="i7e-eI-ZUb"/>
+                                                <constraint firstItem="oWR-vs-iEl" firstAttribute="centerY" secondItem="KVq-7c-afL" secondAttribute="centerY" id="ixb-q0-XTQ"/>
+                                                <constraint firstItem="KVq-7c-afL" firstAttribute="leading" secondItem="fiK-fH-4w5" secondAttribute="leadingMargin" id="kFS-ZM-1Gu"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ap7-pG-3OY" secondAttribute="trailing" constant="-4" id="tZO-0M-eBf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="percentageLabel" destination="ap7-pG-3OY" id="uQo-Tm-PoF"/>
+                                            <outlet property="progressBar" destination="U4q-uA-bOl" id="jyb-Hm-Ix8"/>
+                                            <outlet property="titleLabel" destination="oWR-vs-iEl" id="eei-4D-lpT"/>
+                                            <outlet property="videoImage" destination="KVq-7c-afL" id="YsV-TK-GSp"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="exa-BS-ilN" firstAttribute="centerX" secondItem="qmN-45-Q6z" secondAttribute="centerX" id="32r-vR-Vj8"/>
+                            <constraint firstItem="exa-BS-ilN" firstAttribute="height" secondItem="qmN-45-Q6z" secondAttribute="height" id="KFE-fE-cY2"/>
+                            <constraint firstItem="5eI-3B-Zao" firstAttribute="top" secondItem="exa-BS-ilN" secondAttribute="bottom" id="QLt-9n-4d5"/>
+                            <constraint firstItem="exa-BS-ilN" firstAttribute="width" secondItem="qmN-45-Q6z" secondAttribute="width" id="e7Q-RI-a6q"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <tabBarItem key="tabBarItem" title="Downloads" image="Downloads" id="Fns-pq-JN3"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="videoTable" destination="exa-BS-ilN" id="mYW-q5-Zcj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zyK-3q-8md" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="528.79999999999995" y="247.82608695652175"/>
+        </scene>
+        <!--YouTube-->
+        <scene sceneID="9Kw-IL-PuH">
+            <objects>
+                <viewController id="jiJ-I8-Umx" customClass="YouTubeViewer" customModule="YouTubeVideoDownloader" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b6y-1B-CZb"/>
+                        <viewControllerLayoutGuide type="bottom" id="67A-Ks-Mla"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ONj-M2-Zs0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <tabBarItem key="tabBarItem" title="YouTube" image="youtube" id="hKY-4B-Fg6"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U1L-35-fnj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="530" y="-407"/>
+        </scene>
+        <!--You Tube Tab Bar Controller-->
+        <scene sceneID="hKH-Io-J9C">
+            <objects>
+                <tabBarController id="mSM-cc-ux7" customClass="YouTubeTabBarController" customModule="YouTubeVideoDownloader" customModuleProvider="target" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleAspectFill" translucent="NO" id="GIH-eb-IYS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="jiJ-I8-Umx" kind="relationship" relationship="viewControllers" id="nWm-VL-zqw"/>
+                        <segue destination="fjV-Lm-FvR" kind="relationship" relationship="viewControllers" id="QTP-Bb-Uva"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mgr-Sv-0iE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-422" y="-80"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Downloads" width="25" height="25"/>
+        <image name="youtube" width="30" height="30"/>
+    </resources>
+</document>

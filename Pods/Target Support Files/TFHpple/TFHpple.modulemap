@@ -1,0 +1,6 @@
+framework module TFHpple {
+  umbrella header "TFHpple-umbrella.h"
+
+  export *
+  module * { export * }
+}

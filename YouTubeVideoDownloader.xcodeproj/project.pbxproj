@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		003B58513F4447A7C4717EAE /* Pods_YouTubeVideoDownloader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17ECA69C51D506D57B67790 /* Pods_YouTubeVideoDownloader.framework */; };
+		3E4BF9D61E21A07900D76459 /* YTNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4BF9D51E21A07900D76459 /* YTNotificationView.swift */; };
+		3E81F3011E2ABE6000CD81D1 /* WKTrafficManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E81F3001E2ABE6000CD81D1 /* WKTrafficManager.swift */; };
+		3ED95E141E1A7F4200E9605C /* YouTubeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED95E131E1A7F4200E9605C /* YouTubeTabBarController.swift */; };
+		3EEB151F1E1B2255006A8ABB /* AVPlayerBlocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEB151E1E1B2255006A8ABB /* AVPlayerBlocker.swift */; };
+		3EEEC9501E19B4AF00CFD428 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEEC94F1E19B4AF00CFD428 /* AppDelegate.swift */; };
+		3EEEC9521E19B4AF00CFD428 /* YouTubeViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEEC9511E19B4AF00CFD428 /* YouTubeViewer.swift */; };
+		3EEEC9551E19B4AF00CFD428 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EEEC9531E19B4AF00CFD428 /* Main.storyboard */; };
+		3EEEC9571E19B4AF00CFD428 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EEEC9561E19B4AF00CFD428 /* Assets.xcassets */; };
+		3EEEC95A1E19B4AF00CFD428 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EEEC9581E19B4AF00CFD428 /* LaunchScreen.storyboard */; };
+		3EEEC9651E19B4AF00CFD428 /* YouTubeVideoDownloaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEEC9641E19B4AF00CFD428 /* YouTubeVideoDownloaderTests.swift */; };
+		3EEEC9701E19B4AF00CFD428 /* YouTubeVideoDownloaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEEC96F1E19B4AF00CFD428 /* YouTubeVideoDownloaderUITests.swift */; };
+		3EEEC9801E19D53900CFD428 /* YouTubeScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEEC97F1E19D53900CFD428 /* YouTubeScraper.swift */; };
+		3EEEC9821E19D91400CFD428 /* VideoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEEC9811E19D91400CFD428 /* VideoList.swift */; };
+		3EFE0A8D1E1A93AF00358522 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFE0A8C1E1A93AF00358522 /* Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3EEEC9611E19B4AF00CFD428 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3EEEC9441E19B4AF00CFD428 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EEEC94B1E19B4AF00CFD428;
+			remoteInfo = YouTubeVideoDownloader;
+		};
+		3EEEC96C1E19B4AF00CFD428 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3EEEC9441E19B4AF00CFD428 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EEEC94B1E19B4AF00CFD428;
+			remoteInfo = YouTubeVideoDownloader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3E4BF9D51E21A07900D76459 /* YTNotificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTNotificationView.swift; sourceTree = "<group>"; };
+		3E81F3001E2ABE6000CD81D1 /* WKTrafficManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKTrafficManager.swift; sourceTree = "<group>"; };
+		3ED95E131E1A7F4200E9605C /* YouTubeTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubeTabBarController.swift; sourceTree = "<group>"; };
+		3EEB151E1E1B2255006A8ABB /* AVPlayerBlocker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayerBlocker.swift; sourceTree = "<group>"; };
+		3EEEC94C1E19B4AF00CFD428 /* YouTubeVideoDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTubeVideoDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EEEC94F1E19B4AF00CFD428 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3EEEC9511E19B4AF00CFD428 /* YouTubeViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeViewer.swift; sourceTree = "<group>"; };
+		3EEEC9541E19B4AF00CFD428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3EEEC9561E19B4AF00CFD428 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3EEEC9591E19B4AF00CFD428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3EEEC95B1E19B4AF00CFD428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EEEC9601E19B4AF00CFD428 /* YouTubeVideoDownloaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouTubeVideoDownloaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EEEC9641E19B4AF00CFD428 /* YouTubeVideoDownloaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeVideoDownloaderTests.swift; sourceTree = "<group>"; };
+		3EEEC9661E19B4AF00CFD428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EEEC96B1E19B4AF00CFD428 /* YouTubeVideoDownloaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouTubeVideoDownloaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EEEC96F1E19B4AF00CFD428 /* YouTubeVideoDownloaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeVideoDownloaderUITests.swift; sourceTree = "<group>"; };
+		3EEEC9711E19B4AF00CFD428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EEEC97F1E19D53900CFD428 /* YouTubeScraper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubeScraper.swift; sourceTree = "<group>"; };
+		3EEEC9811E19D91400CFD428 /* VideoList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoList.swift; sourceTree = "<group>"; };
+		3EFE0A8C1E1A93AF00358522 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4D1FA5155AF40A0C5BBB18AF /* Pods-YouTubeVideoDownloader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTubeVideoDownloader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YouTubeVideoDownloader/Pods-YouTubeVideoDownloader.debug.xcconfig"; sourceTree = "<group>"; };
+		54BDAFF263D672E55EC7251E /* Pods-YouTubeVideoDownloader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTubeVideoDownloader.release.xcconfig"; path = "Pods/Target Support Files/Pods-YouTubeVideoDownloader/Pods-YouTubeVideoDownloader.release.xcconfig"; sourceTree = "<group>"; };
+		A17ECA69C51D506D57B67790 /* Pods_YouTubeVideoDownloader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YouTubeVideoDownloader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3EEEC9491E19B4AF00CFD428 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				003B58513F4447A7C4717EAE /* Pods_YouTubeVideoDownloader.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EEEC95D1E19B4AF00CFD428 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EEEC9681E19B4AF00CFD428 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A7C075638C617A0DB0FA35C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A17ECA69C51D506D57B67790 /* Pods_YouTubeVideoDownloader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1261FC34DAF6BFCC06AC816F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D1FA5155AF40A0C5BBB18AF /* Pods-YouTubeVideoDownloader.debug.xcconfig */,
+				54BDAFF263D672E55EC7251E /* Pods-YouTubeVideoDownloader.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3EEB151B1E1B21F4006A8ABB /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				3EFE0A8C1E1A93AF00358522 /* Extensions.swift */,
+				3EEEC97F1E19D53900CFD428 /* YouTubeScraper.swift */,
+				3EEB151E1E1B2255006A8ABB /* AVPlayerBlocker.swift */,
+				3E4BF9D51E21A07900D76459 /* YTNotificationView.swift */,
+				3E81F3001E2ABE6000CD81D1 /* WKTrafficManager.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		3EEB151C1E1B2202006A8ABB /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3ED95E131E1A7F4200E9605C /* YouTubeTabBarController.swift */,
+				3EEEC9511E19B4AF00CFD428 /* YouTubeViewer.swift */,
+				3EEEC9811E19D91400CFD428 /* VideoList.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		3EEB151D1E1B2213006A8ABB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3EEEC9581E19B4AF00CFD428 /* LaunchScreen.storyboard */,
+				3EEEC9531E19B4AF00CFD428 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		3EEEC9431E19B4AF00CFD428 = {
+			isa = PBXGroup;
+			children = (
+				3EEEC94E1E19B4AF00CFD428 /* YouTubeVideoDownloader */,
+				3EEEC9631E19B4AF00CFD428 /* YouTubeVideoDownloaderTests */,
+				3EEEC96E1E19B4AF00CFD428 /* YouTubeVideoDownloaderUITests */,
+				3EEEC94D1E19B4AF00CFD428 /* Products */,
+				1261FC34DAF6BFCC06AC816F /* Pods */,
+				0A7C075638C617A0DB0FA35C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3EEEC94D1E19B4AF00CFD428 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3EEEC94C1E19B4AF00CFD428 /* YouTubeVideoDownloader.app */,
+				3EEEC9601E19B4AF00CFD428 /* YouTubeVideoDownloaderTests.xctest */,
+				3EEEC96B1E19B4AF00CFD428 /* YouTubeVideoDownloaderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3EEEC94E1E19B4AF00CFD428 /* YouTubeVideoDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				3EEEC94F1E19B4AF00CFD428 /* AppDelegate.swift */,
+				3EEB151C1E1B2202006A8ABB /* View Controllers */,
+				3EEB151D1E1B2213006A8ABB /* Storyboards */,
+				3EEB151B1E1B21F4006A8ABB /* Utility */,
+				3EEEC9561E19B4AF00CFD428 /* Assets.xcassets */,
+				3EEEC95B1E19B4AF00CFD428 /* Info.plist */,
+			);
+			path = YouTubeVideoDownloader;
+			sourceTree = "<group>";
+		};
+		3EEEC9631E19B4AF00CFD428 /* YouTubeVideoDownloaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				3EEEC9641E19B4AF00CFD428 /* YouTubeVideoDownloaderTests.swift */,
+				3EEEC9661E19B4AF00CFD428 /* Info.plist */,
+			);
+			path = YouTubeVideoDownloaderTests;
+			sourceTree = "<group>";
+		};
+		3EEEC96E1E19B4AF00CFD428 /* YouTubeVideoDownloaderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3EEEC96F1E19B4AF00CFD428 /* YouTubeVideoDownloaderUITests.swift */,
+				3EEEC9711E19B4AF00CFD428 /* Info.plist */,
+			);
+			path = YouTubeVideoDownloaderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3EEEC94B1E19B4AF00CFD428 /* YouTubeVideoDownloader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EEEC9741E19B4AF00CFD428 /* Build configuration list for PBXNativeTarget "YouTubeVideoDownloader" */;
+			buildPhases = (
+				B1B45D5757A11C78CF4528E2 /* [CP] Check Pods Manifest.lock */,
+				3EEEC9481E19B4AF00CFD428 /* Sources */,
+				3EEEC9491E19B4AF00CFD428 /* Frameworks */,
+				3EEEC94A1E19B4AF00CFD428 /* Resources */,
+				B9024A70CEC6B643CCFF2B8B /* [CP] Embed Pods Frameworks */,
+				21666723659DF70EB2BD7F06 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YouTubeVideoDownloader;
+			productName = YouTubeVideoDownloader;
+			productReference = 3EEEC94C1E19B4AF00CFD428 /* YouTubeVideoDownloader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3EEEC95F1E19B4AF00CFD428 /* YouTubeVideoDownloaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EEEC9771E19B4AF00CFD428 /* Build configuration list for PBXNativeTarget "YouTubeVideoDownloaderTests" */;
+			buildPhases = (
+				3EEEC95C1E19B4AF00CFD428 /* Sources */,
+				3EEEC95D1E19B4AF00CFD428 /* Frameworks */,
+				3EEEC95E1E19B4AF00CFD428 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3EEEC9621E19B4AF00CFD428 /* PBXTargetDependency */,
+			);
+			name = YouTubeVideoDownloaderTests;
+			productName = YouTubeVideoDownloaderTests;
+			productReference = 3EEEC9601E19B4AF00CFD428 /* YouTubeVideoDownloaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3EEEC96A1E19B4AF00CFD428 /* YouTubeVideoDownloaderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EEEC97A1E19B4AF00CFD428 /* Build configuration list for PBXNativeTarget "YouTubeVideoDownloaderUITests" */;
+			buildPhases = (
+				3EEEC9671E19B4AF00CFD428 /* Sources */,
+				3EEEC9681E19B4AF00CFD428 /* Frameworks */,
+				3EEEC9691E19B4AF00CFD428 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3EEEC96D1E19B4AF00CFD428 /* PBXTargetDependency */,
+			);
+			name = YouTubeVideoDownloaderUITests;
+			productName = YouTubeVideoDownloaderUITests;
+			productReference = 3EEEC96B1E19B4AF00CFD428 /* YouTubeVideoDownloaderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3EEEC9441E19B4AF00CFD428 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Charlton Provatas";
+				TargetAttributes = {
+					3EEEC94B1E19B4AF00CFD428 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = WGS4W54952;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					3EEEC95F1E19B4AF00CFD428 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = WJQ6ARU45L;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3EEEC94B1E19B4AF00CFD428;
+					};
+					3EEEC96A1E19B4AF00CFD428 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = WJQ6ARU45L;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3EEEC94B1E19B4AF00CFD428;
+					};
+				};
+			};
+			buildConfigurationList = 3EEEC9471E19B4AF00CFD428 /* Build configuration list for PBXProject "YouTubeVideoDownloader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3EEEC9431E19B4AF00CFD428;
+			productRefGroup = 3EEEC94D1E19B4AF00CFD428 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3EEEC94B1E19B4AF00CFD428 /* YouTubeVideoDownloader */,
+				3EEEC95F1E19B4AF00CFD428 /* YouTubeVideoDownloaderTests */,
+				3EEEC96A1E19B4AF00CFD428 /* YouTubeVideoDownloaderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3EEEC94A1E19B4AF00CFD428 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EEEC95A1E19B4AF00CFD428 /* LaunchScreen.storyboard in Resources */,
+				3EEEC9571E19B4AF00CFD428 /* Assets.xcassets in Resources */,
+				3EEEC9551E19B4AF00CFD428 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EEEC95E1E19B4AF00CFD428 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EEEC9691E19B4AF00CFD428 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21666723659DF70EB2BD7F06 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YouTubeVideoDownloader/Pods-YouTubeVideoDownloader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1B45D5757A11C78CF4528E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B9024A70CEC6B643CCFF2B8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YouTubeVideoDownloader/Pods-YouTubeVideoDownloader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3EEEC9481E19B4AF00CFD428 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EEB151F1E1B2255006A8ABB /* AVPlayerBlocker.swift in Sources */,
+				3EEEC9801E19D53900CFD428 /* YouTubeScraper.swift in Sources */,
+				3E4BF9D61E21A07900D76459 /* YTNotificationView.swift in Sources */,
+				3EFE0A8D1E1A93AF00358522 /* Extensions.swift in Sources */,
+				3EEEC9821E19D91400CFD428 /* VideoList.swift in Sources */,
+				3EEEC9521E19B4AF00CFD428 /* YouTubeViewer.swift in Sources */,
+				3ED95E141E1A7F4200E9605C /* YouTubeTabBarController.swift in Sources */,
+				3E81F3011E2ABE6000CD81D1 /* WKTrafficManager.swift in Sources */,
+				3EEEC9501E19B4AF00CFD428 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EEEC95C1E19B4AF00CFD428 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EEEC9651E19B4AF00CFD428 /* YouTubeVideoDownloaderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EEEC9671E19B4AF00CFD428 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EEEC9701E19B4AF00CFD428 /* YouTubeVideoDownloaderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3EEEC9621E19B4AF00CFD428 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3EEEC94B1E19B4AF00CFD428 /* YouTubeVideoDownloader */;
+			targetProxy = 3EEEC9611E19B4AF00CFD428 /* PBXContainerItemProxy */;
+		};
+		3EEEC96D1E19B4AF00CFD428 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3EEEC94B1E19B4AF00CFD428 /* YouTubeVideoDownloader */;
+			targetProxy = 3EEEC96C1E19B4AF00CFD428 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3EEEC9531E19B4AF00CFD428 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EEEC9541E19B4AF00CFD428 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3EEEC9581E19B4AF00CFD428 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EEEC9591E19B4AF00CFD428 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3EEEC9721E19B4AF00CFD428 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3EEEC9731E19B4AF00CFD428 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3EEEC9751E19B4AF00CFD428 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D1FA5155AF40A0C5BBB18AF /* Pods-YouTubeVideoDownloader.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WGS4W54952;
+				INFOPLIST_FILE = YouTubeVideoDownloader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.charltonprovatas.YouTubeVideoDownloader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3EEEC9761E19B4AF00CFD428 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54BDAFF263D672E55EC7251E /* Pods-YouTubeVideoDownloader.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WGS4W54952;
+				INFOPLIST_FILE = YouTubeVideoDownloader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.charltonprovatas.YouTubeVideoDownloader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3EEEC9781E19B4AF00CFD428 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = WJQ6ARU45L;
+				INFOPLIST_FILE = YouTubeVideoDownloaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.charltonprovatas.YouTubeVideoDownloaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YouTubeVideoDownloader.app/YouTubeVideoDownloader";
+			};
+			name = Debug;
+		};
+		3EEEC9791E19B4AF00CFD428 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = WJQ6ARU45L;
+				INFOPLIST_FILE = YouTubeVideoDownloaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.charltonprovatas.YouTubeVideoDownloaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YouTubeVideoDownloader.app/YouTubeVideoDownloader";
+			};
+			name = Release;
+		};
+		3EEEC97B1E19B4AF00CFD428 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = WJQ6ARU45L;
+				INFOPLIST_FILE = YouTubeVideoDownloaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.charltonprovatas.YouTubeVideoDownloaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = YouTubeVideoDownloader;
+			};
+			name = Debug;
+		};
+		3EEEC97C1E19B4AF00CFD428 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = WJQ6ARU45L;
+				INFOPLIST_FILE = YouTubeVideoDownloaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.charltonprovatas.YouTubeVideoDownloaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = YouTubeVideoDownloader;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3EEEC9471E19B4AF00CFD428 /* Build configuration list for PBXProject "YouTubeVideoDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EEEC9721E19B4AF00CFD428 /* Debug */,
+				3EEEC9731E19B4AF00CFD428 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EEEC9741E19B4AF00CFD428 /* Build configuration list for PBXNativeTarget "YouTubeVideoDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EEEC9751E19B4AF00CFD428 /* Debug */,
+				3EEEC9761E19B4AF00CFD428 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EEEC9771E19B4AF00CFD428 /* Build configuration list for PBXNativeTarget "YouTubeVideoDownloaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EEEC9781E19B4AF00CFD428 /* Debug */,
+				3EEEC9791E19B4AF00CFD428 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EEEC97A1E19B4AF00CFD428 /* Build configuration list for PBXNativeTarget "YouTubeVideoDownloaderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EEEC97B1E19B4AF00CFD428 /* Debug */,
+				3EEEC97C1E19B4AF00CFD428 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3EEEC9441E19B4AF00CFD428 /* Project object */;
+}
